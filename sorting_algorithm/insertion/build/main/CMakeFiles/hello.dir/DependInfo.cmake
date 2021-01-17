@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/main/main.c" "/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/build/main/CMakeFiles/hello.dir/main.c.o"
+  "/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/insertion/main/main.c" "/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/insertion/build/main/CMakeFiles/hello.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

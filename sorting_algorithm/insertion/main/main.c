@@ -1,24 +1,27 @@
-/* Hello World Example
+/* insertion_sort
 
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
 */
 #include <stdio.h>
 
-void bubble_sort(int *arr, int len) 
-{
-
+void insertion_sort(int *arr, int len)  {
+    
+    int pre_index, current;
+    for(int i = 1; i < len; i++) {
+        pre_index = i - 1;
+        current = arr[i];
+        while(pre_index >= 0 && arr[pre_index] > current) {
+            arr[pre_index + 1] = arr[pre_index];
+            pre_index--;
+        }
+        arr[pre_index + 1] = current;
+    }
 }
-
 
 void main()
 {
     printf("Hello world!\n");
     int a[5] = {2, 53, 32, 89, 1};
-    bubble_sort(a, 5);
+    insertion_sort(a, 5);
     for(int i = 0; i < 5; i++) {
         printf("a[%d] %d\n" , i, a[i]);
     }   

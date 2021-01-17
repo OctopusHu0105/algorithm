@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/main
+# Install script for directory: /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/insertion/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

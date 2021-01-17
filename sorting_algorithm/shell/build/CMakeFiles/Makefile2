@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble
+CMAKE_SOURCE_DIR = /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/build
+CMAKE_BINARY_DIR = /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/shell/build
 
 #=============================================================================
 # Directory level rules for directory main
@@ -84,7 +84,7 @@ main/preinstall:
 main/CMakeFiles/hello.dir/all:
 	$(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/depend
 	$(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/build/CMakeFiles --progress-num=1,2 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/shell/build/CMakeFiles --progress-num=1,2 "Built target hello"
 .PHONY : main/CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -94,9 +94,9 @@ all: main/CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 main/CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/shell/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/shell/build/CMakeFiles 0
 .PHONY : main/CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
