@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.c
+stdio.h
+-
+hu_system.h
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/hu_system.h
+binary_tree.h
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.h
+
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/hu_system.h
+stdio.h
+-
+sys/syscall.h
+-
+
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/main.c
+stdio.h
+-
+stdlib.h
+-
+binary_tree.h
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.h
+hu_system.h
+/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/hu_system.h
+
