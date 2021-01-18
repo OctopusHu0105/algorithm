@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main
+# Install script for directory: /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree
+CMAKE_SOURCE_DIR = /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build
+CMAKE_BINARY_DIR = /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/CMakeFiles /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main/CMakeFiles/progress.marks
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/CMakeFiles 0
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main/CMakeFiles/progress.marks
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/clean
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 main/CMakeFiles/hello.dir/rule:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/hello.dir/rule
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/hello.dir/rule
 .PHONY : main/CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,35 @@ hello: main/CMakeFiles/hello.dir/rule
 
 # fast build rule for target.
 hello/fast:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/build
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
+
+avl_tree.o: avl_tree.c.o
+
+.PHONY : avl_tree.o
+
+# target to build an object file
+avl_tree.c.o:
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/avl_tree.c.o
+.PHONY : avl_tree.c.o
+
+avl_tree.i: avl_tree.c.i
+
+.PHONY : avl_tree.i
+
+# target to preprocess a source file
+avl_tree.c.i:
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/avl_tree.c.i
+.PHONY : avl_tree.c.i
+
+avl_tree.s: avl_tree.c.s
+
+.PHONY : avl_tree.s
+
+# target to generate assembly for a file
+avl_tree.c.s:
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/avl_tree.c.s
+.PHONY : avl_tree.c.s
 
 binary_tree.o: binary_tree.c.o
 
@@ -131,7 +158,7 @@ binary_tree.o: binary_tree.c.o
 
 # target to build an object file
 binary_tree.c.o:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.o
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.o
 .PHONY : binary_tree.c.o
 
 binary_tree.i: binary_tree.c.i
@@ -140,7 +167,7 @@ binary_tree.i: binary_tree.c.i
 
 # target to preprocess a source file
 binary_tree.c.i:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.i
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.i
 .PHONY : binary_tree.c.i
 
 binary_tree.s: binary_tree.c.s
@@ -149,7 +176,7 @@ binary_tree.s: binary_tree.c.s
 
 # target to generate assembly for a file
 binary_tree.c.s:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.s
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/binary_tree.c.s
 .PHONY : binary_tree.c.s
 
 main.o: main.c.o
@@ -158,7 +185,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.o
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -167,7 +194,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.i
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -176,7 +203,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.s
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -188,6 +215,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
+	@echo "... avl_tree.o"
+	@echo "... avl_tree.i"
+	@echo "... avl_tree.s"
 	@echo "... binary_tree.o"
 	@echo "... binary_tree.i"
 	@echo "... binary_tree.s"
@@ -205,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

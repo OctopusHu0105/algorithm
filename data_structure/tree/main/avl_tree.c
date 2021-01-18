@@ -55,7 +55,7 @@ void left_balance(avl_tree_node_t node)
                     break;
             }
             rd->bf = BALANCE;
-            left_rotate(&node->left);
+            left_rotate(node->left);
             right_rotate(node);
             break;
     }
@@ -88,7 +88,7 @@ void right_balance(avl_tree_node_t node)
                 break;
         }
             rd->bf = BALANCE;
-            right_rotate(&node->right);
+            right_rotate(node->right);
             left_rotate(node);
             break;
     }
@@ -108,7 +108,7 @@ int insert_avl_tree(avl_tree_node_t node, int value, bool* taller)
         return 0;
     } else if (value < node->value) {
         //如果插入过程，不会影响树本身的平衡，则直接结束
-        if(!insert_avl_tree(&node->left, value, taller)) {
+        if(!insert_avl_tree(node->left, value, taller)) {
             return 0;
         }
             
@@ -131,7 +131,7 @@ int insert_avl_tree(avl_tree_node_t node, int value, bool* taller)
             }
         }
     } else {   //同样，当 e>node->value 时，需要插入到以 node 为根结点的树的右子树中，同样需要做和以上同样的操作
-        if(!insert_avl_tree(&node->right, value, taller)) {
+        if(!insert_avl_tree(node->right, value, taller)) {
             return 0;
         }
         if (*taller) {
@@ -192,16 +192,16 @@ res_err_t avl_tree_init()
     bool taller;
    
     for (int i=0; i<9; i++){
-        insert_avl_tree(&root, array[i], &taller);
+        insert_avl_tree(root, array[i], &taller);
     }
 
     //中序遍历输出
     avl_tree_mid_print(root);
     
     //判断平衡二叉树中是否含有数据域为 103 的数据
-    if (find_node(root, 103, &pos)) {
+    if (find_node(root, 103, pos)) {
         LOGI("\n%d\n",pos->value);
     } else {
-        LOGW("Not find this Node");
+        LOGW("Not find thilHIs Node");
     }
 }

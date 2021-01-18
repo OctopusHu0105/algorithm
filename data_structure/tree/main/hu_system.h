@@ -25,7 +25,7 @@ enum LOG_COLOR
     printf_log(level, fmt, ##__VA_ARGS__)
  
 #define LOGI(fmt, ...) printf_info(COLOR_INFO, fmt, ##__VA_ARGS__)
-#define LOFW(fmt, ...) printf_info(COLOR_WARN, fmt, ##__VA_ARGS__)
+#define LOGW(fmt, ...) printf_info(COLOR_WARN, fmt, ##__VA_ARGS__)
 #define LOGE(fmt, ...) printf_info(COLOR_ERROR, fmt, ##__VA_ARGS__)
 
 

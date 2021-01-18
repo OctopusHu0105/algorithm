@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.c" "/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/binary_tree.c.o"
-  "/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/main.c" "/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/main.c.o"
+  "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/avl_tree.c" "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/avl_tree.c.o"
+  "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/binary_tree.c" "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/binary_tree.c.o"
+  "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/main.c" "/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

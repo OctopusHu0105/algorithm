@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree
+CMAKE_SOURCE_DIR = /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build
+CMAKE_BINARY_DIR = /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build
 
 # Include any dependencies generated for this target.
 include main/CMakeFiles/hello.dir/depend.make
@@ -59,16 +59,16 @@ include main/CMakeFiles/hello.dir/flags.make
 
 main/CMakeFiles/hello.dir/main.c.o: main/CMakeFiles/hello.dir/flags.make
 main/CMakeFiles/hello.dir/main.c.o: ../main/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object main/CMakeFiles/hello.dir/main.c.o"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello.dir/main.c.o   -c /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object main/CMakeFiles/hello.dir/main.c.o"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello.dir/main.c.o   -c /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/main.c
 
 main/CMakeFiles/hello.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello.dir/main.c.i"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/main.c > CMakeFiles/hello.dir/main.c.i
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/main.c > CMakeFiles/hello.dir/main.c.i
 
 main/CMakeFiles/hello.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello.dir/main.c.s"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/main.c -o CMakeFiles/hello.dir/main.c.s
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/main.c -o CMakeFiles/hello.dir/main.c.s
 
 main/CMakeFiles/hello.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ main/CMakeFiles/hello.dir/main.c.o.provides.build: main/CMakeFiles/hello.dir/mai
 
 main/CMakeFiles/hello.dir/binary_tree.c.o: main/CMakeFiles/hello.dir/flags.make
 main/CMakeFiles/hello.dir/binary_tree.c.o: ../main/binary_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object main/CMakeFiles/hello.dir/binary_tree.c.o"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello.dir/binary_tree.c.o   -c /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object main/CMakeFiles/hello.dir/binary_tree.c.o"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello.dir/binary_tree.c.o   -c /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/binary_tree.c
 
 main/CMakeFiles/hello.dir/binary_tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello.dir/binary_tree.c.i"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.c > CMakeFiles/hello.dir/binary_tree.c.i
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/binary_tree.c > CMakeFiles/hello.dir/binary_tree.c.i
 
 main/CMakeFiles/hello.dir/binary_tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello.dir/binary_tree.c.s"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main/binary_tree.c -o CMakeFiles/hello.dir/binary_tree.c.s
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/binary_tree.c -o CMakeFiles/hello.dir/binary_tree.c.s
 
 main/CMakeFiles/hello.dir/binary_tree.c.o.requires:
 
@@ -105,20 +105,46 @@ main/CMakeFiles/hello.dir/binary_tree.c.o.provides: main/CMakeFiles/hello.dir/bi
 main/CMakeFiles/hello.dir/binary_tree.c.o.provides.build: main/CMakeFiles/hello.dir/binary_tree.c.o
 
 
+main/CMakeFiles/hello.dir/avl_tree.c.o: main/CMakeFiles/hello.dir/flags.make
+main/CMakeFiles/hello.dir/avl_tree.c.o: ../main/avl_tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object main/CMakeFiles/hello.dir/avl_tree.c.o"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello.dir/avl_tree.c.o   -c /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/avl_tree.c
+
+main/CMakeFiles/hello.dir/avl_tree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello.dir/avl_tree.c.i"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/avl_tree.c > CMakeFiles/hello.dir/avl_tree.c.i
+
+main/CMakeFiles/hello.dir/avl_tree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello.dir/avl_tree.c.s"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main/avl_tree.c -o CMakeFiles/hello.dir/avl_tree.c.s
+
+main/CMakeFiles/hello.dir/avl_tree.c.o.requires:
+
+.PHONY : main/CMakeFiles/hello.dir/avl_tree.c.o.requires
+
+main/CMakeFiles/hello.dir/avl_tree.c.o.provides: main/CMakeFiles/hello.dir/avl_tree.c.o.requires
+	$(MAKE) -f main/CMakeFiles/hello.dir/build.make main/CMakeFiles/hello.dir/avl_tree.c.o.provides.build
+.PHONY : main/CMakeFiles/hello.dir/avl_tree.c.o.provides
+
+main/CMakeFiles/hello.dir/avl_tree.c.o.provides.build: main/CMakeFiles/hello.dir/avl_tree.c.o
+
+
 # Object files for target hello
 hello_OBJECTS = \
 "CMakeFiles/hello.dir/main.c.o" \
-"CMakeFiles/hello.dir/binary_tree.c.o"
+"CMakeFiles/hello.dir/binary_tree.c.o" \
+"CMakeFiles/hello.dir/avl_tree.c.o"
 
 # External object files for target hello
 hello_EXTERNAL_OBJECTS =
 
 bin/hello: main/CMakeFiles/hello.dir/main.c.o
 bin/hello: main/CMakeFiles/hello.dir/binary_tree.c.o
+bin/hello: main/CMakeFiles/hello.dir/avl_tree.c.o
 bin/hello: main/CMakeFiles/hello.dir/build.make
 bin/hello: main/CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ../bin/hello"
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ../bin/hello"
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 main/CMakeFiles/hello.dir/build: bin/hello
@@ -127,14 +153,15 @@ main/CMakeFiles/hello.dir/build: bin/hello
 
 main/CMakeFiles/hello.dir/requires: main/CMakeFiles/hello.dir/main.c.o.requires
 main/CMakeFiles/hello.dir/requires: main/CMakeFiles/hello.dir/binary_tree.c.o.requires
+main/CMakeFiles/hello.dir/requires: main/CMakeFiles/hello.dir/avl_tree.c.o.requires
 
 .PHONY : main/CMakeFiles/hello.dir/requires
 
 main/CMakeFiles/hello.dir/clean:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main && $(CMAKE_COMMAND) -P CMakeFiles/hello.dir/cmake_clean.cmake
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main && $(CMAKE_COMMAND) -P CMakeFiles/hello.dir/cmake_clean.cmake
 .PHONY : main/CMakeFiles/hello.dir/clean
 
 main/CMakeFiles/hello.dir/depend:
-	cd /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/main /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main /home/zhanghu/zhanghu/octopushu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/main /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main /home/zhanghu/esp/zhanghu/algorithm/data_structure/tree/build/main/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : main/CMakeFiles/hello.dir/depend
 
