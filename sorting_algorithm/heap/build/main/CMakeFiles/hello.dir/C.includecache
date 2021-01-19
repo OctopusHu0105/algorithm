@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/bubble/main/main.c
+/home/zhanghu/esp/zhanghu/algorithm/sorting_algorithm/heap/main/main.c
 stdio.h
 -
 
