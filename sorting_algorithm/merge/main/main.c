@@ -8,41 +8,50 @@
 */
 #include <stdio.h>
 
-void bubble_sort(int *arr, int len) 
-{
-  
+void merge_two(int arr[], int brr[], int i, int j, int len);
+void merge_line(int crr[], int brr[], int i, int k , int j);
+
+int merge_sort(int *arr, int len)  {
+    merge_two(arr, arr, 1, len , len); 
 }
 
-int *merge_sort(int *arr, int len)  {
-    if (len < 2) {
-        return;
-    }
-    int middle = (int)len / 2;
-    int *left = (int *)malloc(middle * sizeof(int));
-    int *right = (int *)malloc((len - middle) * sizeof(int));
-    return merge(merge_sort(left, middle), merge_sort(right, len - middle));
-}
- 
-int merge(int *left, int len_l, int *right, int len_r)
+void merge_two(int arr[], int brr[], int i, int j, int len)
 {
-    var res ult = [];
- 
-    while (left.length>0 && right.length>0) {
-        if (left[0] <= right[0]) {
-            result.push(left.shift());
+    int crr[len+1];
+    if (i == j) {
+        brr[i] = arr[j];
+    } else {
+        int k = (i + j) / 2;
+        merge_two(arr, crr, i, k, len);
+        merge_two(arr, crr, k+1, j, len);
+        merge_line(crr, brr, i, k ,j);
+    }
+    
+}
+
+void merge_line(int crr[], int brr[], int i, int k , int j)
+{
+    int n = 0;
+    for (int a = i, b = k+1; a <= k && b <= j; ) {
+        if (crr[a] < crr[b]) {
+            brr[n++] = crr[a];
+            a++;       
         } else {
-            result.push(right.shift());
+            brr[n++] = crr[b];
+            b++;
+
+        }
+        while (a <= k) {
+            brr[n++] = crr[a++];
+
+        }
+
+        while (b <= j) {
+            brr[n++] = crr[b++];
         }
     }
- 
-    while (left.length)
-        result.push(left.shift());
- 
-    while (right.length)
-        result.push(right.shift());
- 
-    return result;
 }
+
 
 void main()
 {
